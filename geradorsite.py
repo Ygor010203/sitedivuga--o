@@ -1,4 +1,5 @@
 import os
+import subprocess
 import requests
 from bs4 import BeautifulSoup
 
@@ -65,7 +66,18 @@ def adicionar_por_link():
             with open(ARQUIVO_HTML, "w", encoding="utf-8") as f:
                 f.write(novo_html)
             
-            print("\n🚀 Sucesso! Produto adicionado e site atualizado automaticamente!")
+            print("\n🚀 Sucesso! Produto adicionado no HTML local.")
+            
+            # Automação do Git: Salva, Commita e Envia para o GitHub Pages sozinho!
+            try:
+                print("☁️ Subindo alterações para o GitHub Pages...")
+                subprocess.run(["git", "add", "index.html"], check=True)
+                subprocess.run(["git", "commit", "-m", "Adiciona novo produto via script"], check=True)
+                subprocess.run(["git", "push", "origin", "main"], check=True)
+                print("✅ Site atualizado e publicado no ar com sucesso!")
+            except Exception as git_erro:
+                print(f"⚠️ Produto salvo no PC, mas houve um erro ao enviar pro Git: {git_erro}")
+
         else:
             print(f"\n❌ Erro: Tag {marcador} não foi encontrada no index.html.")
     else:
