@@ -3,182 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achados Imperdíveis | Melhores Ofertas</title>
+    
+    <!-- Otimizações de SEO para o Google -->
+    <title>Ofertas e Achadinhos Mercado Livre em Belo Horizonte | Grupo VIP</title>
+    <meta name="description" content="Encontre os melhores descontos, promoções relâmpago e achadinhos do Mercado Livre com foco em Belo Horizonte e região. Entre no grupo VIP de ofertas no Telegram!">
+    <meta name="keywords" content="ofertas mercado livre bh, achadinhos belo horizonte, descontos, promoções, grupo telegram">
+    
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        :root {
+            --amarelo-ml: #ffd100;
+            --azul-escuro: #2d3278;
+            --verde-sucesso: #00a650;
+            --fundo-cinza: #0f172a;
+            --card-bg: #1e293b;
         }
+
         body {
-            background-color: #0f172a;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--fundo-cinza);
             color: #f8fafc;
+            margin: 0;
+            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
         }
+
         .container {
             width: 100%;
             max-width: 480px;
             background: #1e293b;
-            padding: 30px 20px;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            text-align: center;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            box-sizing: border-box;
             border: 1px solid #334155;
         }
-        .logo-placeholder {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #f59e0b, #d97706);
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .logo-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #ffca00, #ff9100);
             border-radius: 50%;
-            margin: 0 auto 15px auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 35px;
-            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+            margin: 0 auto 15px auto;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(255, 202, 0, 0.3);
         }
+
         h1 {
             font-size: 22px;
-            margin-bottom: 8px;
             color: #ffffff;
+            margin: 0 0 8px 0;
+            font-weight: 700;
         }
-        p.subtitle {
+
+        p {
             font-size: 14px;
             color: #94a3b8;
-            margin-bottom: 25px;
+            margin: 0 0 20px 0;
             line-height: 1.4;
         }
-        .btn-main {
+
+        .btn-vip {
             display: block;
             width: 100%;
-            padding: 14px;
-            background-color: #22c55e;
+            background-color: var(--verde-sucesso);
             color: white;
+            text-align: center;
+            padding: 14px 0;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
             text-decoration: none;
-            font-size: 15px;
-            font-weight: bold;
-            border-radius: 8px;
+            box-shadow: 0 4px 14px rgba(0, 166, 80, 0.4);
             transition: background 0.2s, transform 0.1s;
-            box-shadow: 0 4px 14px rgba(34, 197, 94, 0.4);
+            box-sizing: border-box;
             margin-bottom: 25px;
         }
-        .btn-main:hover {
-            background-color: #16a34a;
-            transform: translateY(-2px);
+
+        .btn-vip:hover {
+            background-color: #008f43;
+            transform: translateY(-1px);
         }
+
         .section-title {
-            font-size: 16px;
-            color: #f1f5f9;
+            font-size: 15px;
+            color: var(--amarelo-ml);
+            font-weight: 600;
             margin-bottom: 15px;
-            text-align: left;
-            border-left: 4px solid #f59e0b;
-            padding-left: 8px;
-        }
-        .products-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            text-align: left;
-        }
-        .product-card {
-            background: #0f172a;
-            border: 1px solid #334155;
-            padding: 12px;
-            border-radius: 10px;
             display: flex;
             align-items: center;
+            gap: 8px;
+            border-left: 4px solid var(--amarelo-ml);
+            padding-left: 8px;
+        }
+
+        /* Estilo dos Cards de Produtos Injetados */
+        .product-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 15px;
+            display: flex;
             gap: 12px;
-            transition: border-color 0.2s;
+            align-items: center;
+            border: 1px solid #334155;
         }
-        .product-card:hover {
-            border-color: #f59e0b;
-        }
+
         .product-img {
-            width: 60px;
-            height: 60px;
-            background: #334155;
-            border-radius: 6px;
+            width: 80px;
+            height: 80px;
             object-fit: cover;
-            flex-shrink: 0;
+            border-radius: 8px;
+            background: #ffffff;
         }
+
         .product-info {
-            flex-grow: 1;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
         }
+
         .product-name {
             font-size: 13px;
-            color: #f8fafc;
-            margin-bottom: 4px;
+            color: #e2e8f0;
             font-weight: 600;
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
+
         .product-price {
-            font-size: 12px;
-            color: #4ade80;
-            font-weight: bold;
-            margin-bottom: 6px;
+            font-size: 14px;
+            color: #34d399;
+            font-weight: 700;
         }
+
         .btn-product {
             display: inline-block;
-            padding: 5px 10px;
-            background-color: #3b82f6;
+            background-color: #2563eb;
             color: white;
+            text-align: center;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
             text-decoration: none;
-            font-size: 11px;
-            font-weight: bold;
-            border-radius: 4px;
+            align-self: flex-start;
             transition: background 0.2s;
         }
+
         .btn-product:hover {
-            background-color: #2563eb;
+            background-color: #1d4ed8;
         }
+
         .footer {
-            margin-top: 25px;
+            text-align: center;
             font-size: 11px;
             color: #64748b;
+            margin-top: 25px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="logo-placeholder">🔥</div>
-        <h1>Achados & Promoções</h1>
-        <p class="subtitle">Economize de verdade! Entre no grupo VIP ou confira os destaques abaixo:</p>
-        
-        <!-- Substitua pelo link do seu grupo do Telegram/WhatsApp -->
-        <a href="SEU_LINK_DO_GRUPO_AQUI" class="btn-main" target="_blank">ENTRAR NO GRUPO VIP (GRÁTIS)</a>
+        <div class="header">
+            <div class="logo-icon">🔥</div>
+            <h1>Achados & Promoções</h1>
+            <p>Economize de verdade! Entre no grupo VIP ou confira os destaques abaixo:</p>
+            
+            <!-- Link do seu grupo do Telegram -->
+            <a href="https://t.me/SEU_GRUPO_AQUI" class="btn-vip" target="_blank">ENTRAR NO GRUPO VIP (GRÁTIS)</a>
+        </div>
 
         <div class="section-title">Destaques da Semana</div>
 
-        <div class="products-grid" id="lista-produtos">
-            
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_903017-MLA111914906979_052026-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1Rm8MUJ" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_648653-MLA100045078733_122025-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1E7ykEa" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            <!-- INJECAO_AUTOMATICA -->
-
-        </div>
+        <!-- O script Python vai inserir os novos produtos automaticamente logo abaixo desta linha -->
+        <!-- INJECAO_AUTOMATICA -->
 
         <div class="footer">
             Ofertas atualizadas diariamente para você.
