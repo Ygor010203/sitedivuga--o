@@ -22,7 +22,7 @@
         }
         .container {
             width: 100%;
-            max-width: 420px;
+            max-width: 480px;
             background: #1e293b;
             padding: 30px 20px;
             border-radius: 16px;
@@ -31,49 +31,113 @@
             border: 1px solid #334155;
         }
         .logo-placeholder {
-            width: 90px;
-            height: 90px;
+            width: 80px;
+            height: 80px;
             background: linear-gradient(135deg, #f59e0b, #d97706);
             border-radius: 50%;
-            margin: 0 auto 20px auto;
+            margin: 0 auto 15px auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 40px;
+            font-size: 35px;
             box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
         }
         h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 22px;
+            margin-bottom: 8px;
             color: #ffffff;
         }
-        p {
-            font-size: 15px;
+        p.subtitle {
+            font-size: 14px;
             color: #94a3b8;
-            margin-bottom: 30px;
-            line-height: 1.5;
+            margin-bottom: 25px;
+            line-height: 1.4;
         }
-        .btn {
+        .btn-main {
             display: block;
             width: 100%;
-            padding: 15px;
+            padding: 14px;
             background-color: #22c55e;
             color: white;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             border-radius: 8px;
             transition: background 0.2s, transform 0.1s;
             box-shadow: 0 4px 14px rgba(34, 197, 94, 0.4);
-            margin-bottom: 15px;
+            margin-bottom: 25px;
         }
-        .btn:hover {
+        .btn-main:hover {
             background-color: #16a34a;
             transform: translateY(-2px);
         }
-        .footer {
-            margin-top: 20px;
+        .section-title {
+            font-size: 16px;
+            color: #f1f5f9;
+            margin-bottom: 15px;
+            text-align: left;
+            border-left: 4px solid #f59e0b;
+            padding-left: 8px;
+        }
+        .products-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            text-align: left;
+        }
+        .product-card {
+            background: #0f172a;
+            border: 1px solid #334155;
+            padding: 12px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: border-color 0.2s;
+        }
+        .product-card:hover {
+            border-color: #f59e0b;
+        }
+        .product-img {
+            width: 60px;
+            height: 60px;
+            background: #334155;
+            border-radius: 6px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .product-info {
+            flex-grow: 1;
+        }
+        .product-name {
+            font-size: 13px;
+            color: #f8fafc;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+        .product-price {
             font-size: 12px;
+            color: #4ade80;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        .btn-product {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #3b82f6;
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .btn-product:hover {
+            background-color: #2563eb;
+        }
+        .footer {
+            margin-top: 25px;
+            font-size: 11px;
             color: #64748b;
         }
     </style>
@@ -81,17 +145,43 @@
 <body>
 
     <div class="container">
-        <div class="logo-placeholder">
-            🔥
-        </div>
+        <div class="logo-placeholder">🔥</div>
         <h1>Achados & Promoções</h1>
-        <p>Receba em primeira mão os melhores descontos, cupons e achados do Mercado Livre direto no seu celular. Economize de verdade!</p>
+        <p class="subtitle">Economize de verdade! Entre no grupo VIP ou confira os destaques abaixo:</p>
         
-        <!-- Substitua o link '#' pelo link do seu grupo do Telegram ou WhatsApp -->
-        <a href="https://t.me/+uFGsW8xTBVAzM2Qx" class="btn" target="_blank">ENTRAR NO GRUPO VIP (GRÁTIS)</a>
+        <!-- Substitua pelo link do seu grupo do Telegram/WhatsApp -->
+        <a href="SEU_LINK_DO_GRUPO_AQUI" class="btn-main" target="_blank">ENTRAR NO GRUPO VIP (GRÁTIS)</a>
+
+        <div class="section-title">Destaques da Semana</div>
+
+        <div class="products-grid" id="lista-produtos">
+            
+            
+            <div class="product-card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_903017-MLA111914906979_052026-O.webp" alt="LOJA | Perfil Social" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">LOJA | Perfil Social</div>
+                    <div class="product-price">Confira no site</div>
+                    <a href="https://meli.la/1Rm8MUJ" class="btn-product" target="_blank">Ver Oferta</a>
+                </div>
+            </div>
+    
+            
+            <div class="product-card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_648653-MLA100045078733_122025-O.webp" alt="LOJA | Perfil Social" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">LOJA | Perfil Social</div>
+                    <div class="product-price">Confira no site</div>
+                    <a href="https://meli.la/1E7ykEa" class="btn-product" target="_blank">Ver Oferta</a>
+                </div>
+            </div>
+    
+            <!-- INJECAO_AUTOMATICA -->
+
+        </div>
 
         <div class="footer">
-            Conteúdo verificado e ofertas diárias para você.
+            Ofertas atualizadas diariamente para você.
         </div>
     </div>
 
