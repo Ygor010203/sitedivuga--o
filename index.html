@@ -14,17 +14,17 @@
     
     <style>
         :root {
-            --amarelo-ml: #ffd100;
+            --amarelo-ml: #c1b16a;
             --azul-escuro: #2d3278;
-            --verde-sucesso: #00a650;
-            --fundo-cinza: #0f172a;
-            --card-bg: #1e293b;
+            --verde-sucesso: #369966;
+            --fundo-cinza: #8b95ac;
+            --card-bg: #050f1f;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--fundo-cinza);
-            color: #f8fafc;
+            color: #02060a;
             margin: 0;
             padding: 20px;
             display: flex;
@@ -36,12 +36,12 @@
         .container {
             width: 100%;
             max-width: 480px;
-            background: #1e293b;
+            background: #1e3f75;
             border-radius: 20px;
             padding: 25px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 25px rgba(157, 45, 45, 0.5);
             box-sizing: border-box;
-            border: 1px solid #334155;
+            border: 1px solid #8b919b;
         }
 
         .header {
@@ -64,14 +64,14 @@
 
         h1 {
             font-size: 22px;
-            color: #ffffff;
+            color: #4cdf4f;
             margin: 0 0 8px 0;
             font-weight: 700;
         }
 
         p {
             font-size: 14px;
-            color: #94a3b8;
+            color: #ebf0f7;
             margin: 0 0 20px 0;
             line-height: 1.4;
         }
@@ -80,21 +80,21 @@
             display: block;
             width: 100%;
             background-color: var(--verde-sucesso);
-            color: white;
+            color: rgb(223, 223, 224);
             text-align: center;
             padding: 14px 0;
             border-radius: 12px;
             font-size: 16px;
             font-weight: 700;
             text-decoration: none;
-            box-shadow: 0 4px 14px rgba(0, 166, 80, 0.4);
+            box-shadow: 0 4px 14px rgba(44, 74, 59, 0.4);
             transition: background 0.2s, transform 0.1s;
             box-sizing: border-box;
             margin-bottom: 25px;
         }
 
         .btn-vip:hover {
-            background-color: #008f43;
+            background-color: #452285;
             transform: translateY(-1px);
         }
 
@@ -112,7 +112,7 @@
 
         /* Estilo dos Cards de Produtos Injetados */
         .product-card {
-            background: #0f172a;
+            background: #132144;
             border-radius: 12px;
             padding: 12px;
             margin-bottom: 15px;
@@ -150,7 +150,7 @@
 
         .product-price {
             font-size: 14px;
-            color: #34d399;
+            color: #514a9f;
             font-weight: 700;
         }
 
@@ -169,7 +169,7 @@
         }
 
         .btn-product:hover {
-            background-color: #1d4ed8;
+            background-color: #415ba3;
         }
 
         .footer {
@@ -182,7 +182,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container"> 
         <div class="header">
             <div class="logo-icon">🔥</div>
             <h1>Achados & Promoções</h1>
@@ -194,313 +194,28 @@
 
         <div class="section-title">Destaques da Semana</div>
 
-        <!-- O script Python vai inserir os novos produtos automaticamente logo abaixo desta linha -->
-        
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_710675-MLB89102120983_082025-O.webp" alt="Grupo | Ofertas Mercado Livre BH" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">Grupo | Ofertas Mercado Livre BH</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1dxdyAB" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
+        <!-- Container onde os produtos vão entrar -->
+        <div class="produtos-container">
             
             <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_900387-MLA109507200694_042026-O.webp" alt="Grupo | Ofertas Mercado Livre BH" class="product-img">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_893501-MLB92700478434_092025-O.webp" alt="Tonalizante Capilar Nouê Camuflage Medium 140ml Castanho 4 Castanho" class="product-img">
                 <div class="product-info">
-                    <div class="product-name">Grupo | Ofertas Mercado Livre BH</div>
+                    <div class="product-name">Tonalizante Capilar Nouê Camuflage Medium 140ml Castanho 4 Castanho</div>
                     <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1sdQ8Lf" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_751516-MLB87616956895_072025-O.webp" alt="Grupo | Ofertas Mercado Livre BH" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">Grupo | Ofertas Mercado Livre BH</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1xe4g31" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-            
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_875598-MLB84506994520_052025-O.webp" alt="Grupo | Ofertas Mercado Livre BH" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">Grupo | Ofertas Mercado Livre BH</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/2W1eTWX" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_887713-MLA99566885840_122025-O.webp" alt="Grupo | Ofertas Mercado Livre BH" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">Grupo | Ofertas Mercado Livre BH</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/2tnnBPB" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_906294-MLA84549494604_052025-O.webp" alt="Grupo | Ofertas Mercado Livre BH" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">Grupo | Ofertas Mercado Livre BH</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/2cAuGS4" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_603958-MLB116498100035_082026-O.webp" alt="Grupo | Ofertas Mercado Livre BH" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">Grupo | Ofertas Mercado Livre BH</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/2DGvFQs" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_852738-MLA99700511468_122025-O.webp" alt="Grupo | Ofertas Mercado Livre BH" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">Grupo | Ofertas Mercado Livre BH</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1npWSF8" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_765803-MLA112010174337_052026-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1LwqejF" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_630282-MLA99447176786_112025-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/252A1a4" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_847071-MLU74126704613_012024-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/27MkvWy" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://via.placeholder.com/150" alt="Achado Imperdível" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">Achado Imperdível</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="Q4WSRG-NYF8" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_706590-MLB96866004252_112025-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/2RzdAzi" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_825491-MLA99480103428_112025-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/2bwBXbd" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_649216-MLB112628129847_062026-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1vTHdfP" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_732049-MLA114287356571_072026-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/27TUJyc" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_989484-MLA95939451573_102025-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/2LsHgPJ" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_668671-MLB114423477941_072026-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/2vMb43T" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_946493-MLA99958765459_112025-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/21PjJ75" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_681988-MLA96418202844_102025-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1E8e3yk" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_875319-MLB109876181493_032026-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1GVCrXW" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_921033-MLB118320583715_092026-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1ckQMLW" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_842494-MLA96419095420_102025-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/2pp37Y3" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://via.placeholder.com/150" alt="Achado Imperdível" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">Achado Imperdível</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1Midc7t" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_633698-MLA117095661445_092026-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1MEY8oo" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_776821-MLA99365251528_112025-O.webp" alt="Creatina Max Titanium em pó Sem sabor x 300g 2 un" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">Creatina Max Titanium em pó Sem sabor x 300g 2 un</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1MQRAXt" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_609364-MLB114920479787_072026-O.webp" alt="Jogo Toalhas Banho E Rosto Grossas Macias 100% Algodão 4pçs" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">Jogo Toalhas Banho E Rosto Grossas Macias 100% Algodão 4pçs</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/2w2AVdp" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_776821-MLA99365251528_112025-O.webp" alt="LOJA | Perfil Social" class="product-img">
-                <div class="product-info">
-                    <div class="product-name">LOJA | Perfil Social</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/1MQRAXt" class="btn-product" target="_blank">Ver Oferta</a>
-                </div>
-            </div>
-    
-            
-            <div class="product-card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_612999-MLA102412809695_122025-O.webp" alt="Samsung Smart Tv 43 Qled Full Hd Q5f 2025, Xbox Cloud Gaming, Canais G..." class="product-img">
-                <div class="product-info">
-                    <div class="product-name">Samsung Smart Tv 43 Qled Full Hd Q5f 2025, Xbox Cloud Gaming, Canais G...</div>
-                    <div class="product-price">Confira no site</div>
-                    <a href="https://meli.la/14zYgiK" class="btn-product" target="_blank">Ver Oferta</a>
+                    <a href="https://meli.la/24ULQGE" class="btn-product" target="_blank">Ver Oferta</a>
                 </div>
             </div>
     
             <!-- INJECAO_AUTOMATICA -->
+        </div>
 
         <div class="footer">
-            Ofertas atualizadas diariamente para você.
-
-             <!-- FOOTER -->
-    <footer>
-
-        <p>&copy; 2026 Barberia Premium.</p>
-
-    </footer>
+            <p>Ofertas atualizadas diariamente para você.</p>
+            <p>&copy; 2026 Achadinhos BH.</p>
         </div>
+        
+        <script src="script.js"></script>
     </div>
 
 </body>
 </html>
-
-
